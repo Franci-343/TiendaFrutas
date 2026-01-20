@@ -11,7 +11,7 @@ public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) {
 		try {
-			Parent root = FXMLLoader.load(getClass().getResource("tienda.fxml"));
+			Parent root = FXMLLoader.load(getClass().getResource("/vista/tienda.fxml"));
 			primaryStage.setTitle("Tienda de Frutas");
 			primaryStage.setScene(new Scene(root, 600, 400));
 			primaryStage.show();
