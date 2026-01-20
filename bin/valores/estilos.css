@@ -1,0 +1,23 @@
+
+/* Caja de busqueda 
+   fondo blanco y bordes redondeados 
+*/
+.search-box{
+	-fx-background-color: #FFFFFF;
+ 	-fx-background-radius: 100;
+}
+/*
+  labeel de busqueda
+  transparente
+*/
+
+.transparent{
+	-fx-background-color: rgba(0,0,0,0);
+}
+/*
+ boton de busqueda
+*/
+.search-button{
+	-fx-background-color: #828282;
+	-fx-background-radius: 30;
+}
