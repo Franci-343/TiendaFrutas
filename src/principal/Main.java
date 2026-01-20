@@ -13,7 +13,7 @@ public class Main extends Application {
 		try {
 			Parent root = FXMLLoader.load(getClass().getResource("/vista/tienda.fxml"));
 			primaryStage.setTitle("Tienda de Frutas");
-			primaryStage.setScene(new Scene(root, 600, 400));
+			primaryStage.setScene(new Scene(root));
 			primaryStage.show();
 		} catch (Exception e) {
 			e.printStackTrace();
