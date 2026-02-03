@@ -29,3 +29,17 @@
 .shadow{
 	-fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.3) , 10, 0.0 , 0 , 10.8 );
 }
+/* carta de frutas naranja */
+.chosen-fruit-card{
+	-fx-background-color: #F16C31;
+	-fx-background-radius: 38;
+}
+
+.comboBox{
+	-fx-background-color: rgba(255,255,255,0.3);
+	-fx-background-radius: 30;
+}
+.add-btn{
+	-fx-background-color: #FFFFFF;
+	-fx-background-radius: 100;
+}

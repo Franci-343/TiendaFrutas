@@ -12,14 +12,15 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="810.0" prefWidth="1315.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="780.0" prefWidth="1315.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <BorderPane layoutX="94.0" layoutY="94.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <BorderPane layoutY="-14.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-14.0">
          <left>
-            <VBox prefHeight="200.0" prefWidth="435.0" styleClass="right-bar" stylesheets="@../valores/estilos.css" BorderPane.alignment="CENTER">
+            <VBox prefHeight="791.0" prefWidth="435.0" styleClass="right-bar" stylesheets="@../valores/estilos.css" BorderPane.alignment="CENTER">
                <children>
                   <HBox alignment="CENTER" prefHeight="110.0" prefWidth="200.0">
                      <children>
@@ -54,19 +55,22 @@
                         <String fx:value="shadow" />
                      </styleClass>
                   </HBox>
-                  <VBox alignment="CENTER" prefHeight="535.0" prefWidth="100.0">
+                  <VBox alignment="CENTER" prefHeight="535.0" prefWidth="100.0" styleClass="chosen-fruit-card" stylesheets="@../valores/estilos.css">
                      <VBox.margin>
-                        <Insets left="50.0" right="50.0" top="10.0" />
+                        <Insets left="50.0" right="50.0" top="55.0" />
                      </VBox.margin>
                      <children>
                         <HBox prefHeight="63.0" prefWidth="334.0">
                            <children>
-                              <Label prefHeight="62.0" prefWidth="175.0" text="Durazno">
+                              <Label prefHeight="62.0" prefWidth="175.0" text="Durazno" textFill="WHITE">
                                  <font>
                                     <Font name="Cambria" size="30.0" />
                                  </font>
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
                               </Label>
-                              <Label prefHeight="62.0" prefWidth="131.0" text="\$1.50">
+                              <Label prefHeight="62.0" prefWidth="131.0" text="\$1.50" textFill="WHITE">
                                  <font>
                                     <Font name="Cambria" size="30.0" />
                                  </font>
@@ -83,42 +87,42 @@
                         </ImageView>
                         <HBox alignment="CENTER" prefHeight="55.0" prefWidth="334.0">
                            <children>
-                              <Label prefHeight="55.0" prefWidth="166.0" text="Kg">
+                              <Label prefHeight="55.0" prefWidth="166.0" text="Kg" textFill="WHITE">
                                  <font>
                                     <Font name="Cambria" size="30.0" />
                                  </font>
                               </Label>
-                              <ComboBox prefHeight="45.0" prefWidth="130.0" promptText="1" />
+                              <ComboBox prefHeight="45.0" prefWidth="130.0" promptText="1" styleClass="comboBox" stylesheets="@../valores/estilos.css" />
                            </children>
                            <VBox.margin>
                               <Insets top="10.0" />
                            </VBox.margin>
                         </HBox>
-                        <HBox alignment="CENTER" prefHeight="45.0" prefWidth="200.0">
+                        <HBox alignment="CENTER" prefHeight="46.0" prefWidth="324.0">
                            <children>
                               <Separator prefHeight="20.0" prefWidth="155.0" />
-                              <Label alignment="CENTER" prefHeight="46.0" prefWidth="30.0" text="O">
+                              <Label alignment="CENTER" prefHeight="46.0" prefWidth="30.0" text="O" textFill="WHITE">
                                  <font>
                                     <Font name="Cambria" size="30.0" />
                                  </font>
                               </Label>
-                              <Separator prefHeight="7.0" prefWidth="150.0" />
+                              <Separator prefHeight="16.0" prefWidth="150.0" />
                            </children>
                         </HBox>
                         <HBox alignment="CENTER" prefHeight="55.0" prefWidth="334.0">
                            <children>
-                              <Label prefHeight="55.0" prefWidth="166.0" text="Kg">
+                              <Label prefHeight="55.0" prefWidth="166.0" text="Kg" textFill="WHITE">
                                  <font>
                                     <Font name="Cambria" size="30.0" />
                                  </font>
                               </Label>
-                              <ComboBox prefHeight="45.0" prefWidth="130.0" promptText="Seleccionado" />
+                              <ComboBox prefHeight="45.0" prefWidth="130.0" promptText="Seleccionado" styleClass="comboBox" stylesheets="@../valores/estilos.css" />
                            </children>
                            <VBox.margin>
                               <Insets top="10.0" />
                            </VBox.margin>
                         </HBox>
-                        <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="270.0" text="Añadir al carrito">
+                        <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="270.0" styleClass="add-btn" stylesheets="@../valores/estilos.css" text="Añadir al carrito" textFill="#a66d2c">
                            <VBox.margin>
                               <Insets bottom="30.0" top="20.0" />
                            </VBox.margin>
@@ -131,6 +135,46 @@
                </children>
             </VBox>
          </left>
+         <padding>
+            <Insets bottom="-14.0" />
+         </padding>
+         <center>
+            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="65.0" prefWidth="200.0">
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" top="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label prefHeight="62.0" prefWidth="108.0" text="Idioma:" textFill="#050505">
+                           <font>
+                              <Font name="Cambria" size="30.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="62.0" prefWidth="141.0" text="Español" textFill="#050505" underline="true">
+                           <font>
+                              <Font name="Cambria" size="30.0" />
+                           </font>
+                        </Label>
+                        <Pane prefHeight="100.0" prefWidth="320.0" HBox.hgrow="ALWAYS" />
+                        <Label prefHeight="62.0" prefWidth="135.0" text="Mi cuenta" textFill="#050505">
+                           <font>
+                              <Font name="Cambria" size="30.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/iconos/carro.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </children>
+               <BorderPane.margin>
+                  <Insets top="14.0" />
+               </BorderPane.margin>
+            </VBox>
+         </center>
       </BorderPane>
    </children>
 </AnchorPane>
