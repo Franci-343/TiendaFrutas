@@ -169,6 +169,62 @@
                         </ImageView>
                      </children>
                   </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="115.0" prefWidth="370.0" styleClass="free-delivery-card" stylesheets="@../valores/estilos.css">
+                           <children>
+                              <VBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="247.0">
+                                 <children>
+                                    <Label prefHeight="36.0" prefWidth="199.0" text="Delivery Gratis" textFill="#050505">
+                                       <font>
+                                          <Font name="Cambria Bold" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label prefHeight="42.0" prefWidth="222.0" text="pedidos de mas de 20$" textFill="#050505">
+                                       <font>
+                                          <Font name="Cambria" size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/iconos/carro.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="115.0" prefWidth="370.0" styleClass="free-delivery-card" stylesheets="@../valores/estilos.css">
+                           <children>
+                              <VBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="247.0">
+                                 <children>
+                                    <Label prefHeight="36.0" prefWidth="199.0" text="Delivery Gratis" textFill="#050505">
+                                       <font>
+                                          <Font name="Cambria Bold" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label prefHeight="42.0" prefWidth="222.0" text="pedidos de mas de 20$" textFill="#050505">
+                                       <font>
+                                          <Font name="Cambria" size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/iconos/reloj.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="50.0" />
+                           </HBox.margin>
+                        </HBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </VBox.margin>
+                  </HBox>
                </children>
                <BorderPane.margin>
                   <Insets top="14.0" />
