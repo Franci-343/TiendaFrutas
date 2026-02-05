@@ -41,21 +41,86 @@ public class TiendaControlador implements Initializable {
     private List<Fruta> getData() {
 		List<Fruta> frutas = new ArrayList<>();
 		Fruta fruta;
-		for(int i=0; i<20; i++) {
-			fruta = new Fruta();
-			fruta.setNombre("Kiwi");
-			fruta.setPrecio(2.99);
-			fruta.setImgSrc("/img/frutas/kiwi.png");
-			fruta.setColor("6A7324");
-			frutas.add(fruta);
-		}
+		
+		// Cereza
+		fruta = new Fruta();
+		fruta.setNombre("Cereza");
+		fruta.setPrecio(3.49);
+		fruta.setImgSrc("/img/frutas/cereza.png");
+		fruta.setColor("C72C41");
+		frutas.add(fruta);
+		
+		// Durazno
+		fruta = new Fruta();
+		fruta.setNombre("Durazno");
+		fruta.setPrecio(2.79);
+		fruta.setImgSrc("/img/frutas/Durazno.png");
+		fruta.setColor("F5A962");
+		frutas.add(fruta);
+		
+		// Frutilla
+		fruta = new Fruta();
+		fruta.setNombre("Frutilla");
+		fruta.setPrecio(4.99);
+		fruta.setImgSrc("/img/frutas/Frutilla.png");
+		fruta.setColor("E8374E");
+		frutas.add(fruta);
+		
+		// Kiwi
+		fruta = new Fruta();
+		fruta.setNombre("Kiwi");
+		fruta.setPrecio(2.99);
+		fruta.setImgSrc("/img/frutas/kiwi.png");
+		fruta.setColor("6A7324");
+		frutas.add(fruta);
+		
+		// Manzana
+		fruta = new Fruta();
+		fruta.setNombre("Manzana");
+		fruta.setPrecio(1.99);
+		fruta.setImgSrc("/img/frutas/Manzana.png");
+		fruta.setColor("E74C3C");
+		frutas.add(fruta);
+		
+		// Papaya
+		fruta = new Fruta();
+		fruta.setNombre("Papaya");
+		fruta.setPrecio(3.29);
+		fruta.setImgSrc("/img/frutas/Papaya.png");
+		fruta.setColor("F39C12");
+		frutas.add(fruta);
+		
+		// Pera
+		fruta = new Fruta();
+		fruta.setNombre("Pera");
+		fruta.setPrecio(2.49);
+		fruta.setImgSrc("/img/frutas/Pera.png");
+		fruta.setColor("A8C256");
+		frutas.add(fruta);
+		
+		// Plátano
+		fruta = new Fruta();
+		fruta.setNombre("Plátano");
+		fruta.setPrecio(1.49);
+		fruta.setImgSrc("/img/frutas/Platano.png");
+		fruta.setColor("F4D03F");
+		frutas.add(fruta);
+		
+		// Sandía
+		fruta = new Fruta();
+		fruta.setNombre("Sandía");
+		fruta.setPrecio(5.99);
+		fruta.setImgSrc("/img/frutas/Sandia.png");
+		fruta.setColor("27AE60");
+		frutas.add(fruta);
+		
 		return frutas;
 	}
 
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		frutas.addAll(getData());
-		int columnas = 8, filas = 8;
+		int columnas = 0, filas = 0;
 		try {
 			for (int i = 0; i < frutas.size(); i++) {
 				FXMLLoader fxmlLoader = new FXMLLoader();
@@ -65,12 +130,15 @@ public class TiendaControlador implements Initializable {
 				
 				ItemControlador itemControlador = fxmlLoader.getController();
 				itemControlador.setData(frutas.get(i));
+				
+				grid.add(anchorPane, columnas, filas);
+				GridPane.setMargin(anchorPane, new Insets(10));
+				
+				columnas++;
 				if (columnas == 3) {
 					columnas = 0;
 					filas++;
 				}
-				grid.add(anchorPane, columnas++,filas);
-				GridPane.setMargin(anchorPane, new Insets(10) );
 			}
 		} catch (Exception e) {
 			e.printStackTrace();

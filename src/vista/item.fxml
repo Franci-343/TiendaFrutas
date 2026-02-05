@@ -10,21 +10,20 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="215.0" prefWidth="225.0" stylesheets="@../valores/estilos.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ItemControlador">
+<AnchorPane minHeight="240.0" minWidth="200.0" prefHeight="280.0" prefWidth="280.0" stylesheets="@../valores/estilos.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ItemControlador">
    <children>
       <VBox alignment="TOP_CENTER" layoutX="63.0" layoutY="8.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <HBox prefHeight="49.0" prefWidth="226.0">
+            <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="280.0">
                <children>
-                  <Label fx:id="nameLabel" prefHeight="38.0" prefWidth="134.0" text="Cereza">
+                  <Label fx:id="nameLabel" prefHeight="45.0" prefWidth="150.0" text="Cereza">
                      <font>
-                        <Font name="Cambria" size="24.0" />
+                        <Font name="Cambria" size="26.0" />
                      </font>
                   </Label>
-                  <Label fx:id="priceLabel" prefHeight="38.0" prefWidth="71.0" text="\$ 0.99">
+                  <Label fx:id="priceLabel" prefHeight="45.0" prefWidth="100.0" text="\$ 0.99">
                      <font>
-                        <Font name="Cambria Bold" size="18.0" />
+                        <Font name="Cambria Bold" size="20.0" />
                      </font>
                   </Label>
                </children>
@@ -32,10 +31,13 @@
                   <Insets left="20.0" right="20.0" top="20.0" />
                </VBox.margin>
             </HBox>
-            <ImageView fx:id="img" fitHeight="115.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="img" fitHeight="160.0" fitWidth="220.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../img/frutas/cereza.png" />
                </image>
+               <VBox.margin>
+                  <Insets bottom="15.0" top="10.0" />
+               </VBox.margin>
             </ImageView>
          </children>
       </VBox>
